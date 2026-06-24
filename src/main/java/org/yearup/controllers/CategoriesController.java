@@ -41,7 +41,7 @@ public class CategoriesController
             return ResponseEntity.notFound().build();
         }
 
-        return ResponseEntity.ok(category);
+        return ResponseEntity.ok(category)
     }
 
     @GetMapping("{categoryId}/products")
