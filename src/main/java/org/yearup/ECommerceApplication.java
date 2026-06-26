@@ -8,7 +8,7 @@ public class ECommerceApplication
 {
 
     public static void main(String[] args) {
-        String dbName = System.getenv("DB_NAME");
+        String dbName = System.getenv("recordshop");
         if (dbName != null && !dbName.isBlank()) {
             String bannerResource = "classpath:banner-" + dbName.toLowerCase() + ".txt";
             System.setProperty("spring.banner.location", bannerResource);
